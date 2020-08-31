@@ -14,6 +14,13 @@ const styles = StyleSheet.create({
       borderBottomColor: 'black', 
       borderBottomWidth: 1, 
       width: '75%' 
+    },
+    listItem: {
+        padding: 10,
+        backgroundColor: '#ccc',
+        borderColor: 'black',
+        borderWidth: 1,
+        marginVertical: 3
     }
   });
 
