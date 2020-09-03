@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import React from "react";
+import { View, Text, TouchableOpacity } from "react-native";
 
-import styles from '../styles/styles';
+import styles from "../styles/styles";
 
 const GoalItem = (props) => (
+  <TouchableOpacity onPress={props.onDelete.bind(this, props.id)}>
     <View style={styles.listItem}>
-    <Text>{props.children}</Text>
+      <Text>{props.children}</Text>
     </View>
-)
+  </TouchableOpacity>
+);
 
 export default GoalItem;
